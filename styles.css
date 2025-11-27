@@ -41,7 +41,9 @@ a {
 }
 
 a:hover,
-button:hover {
+a:active,
+button:hover,
+button:active {
   opacity: 0.9;
 }
 
@@ -106,7 +108,8 @@ section {
 }
 
 .primary-nav a:hover,
-.primary-nav a:focus {
+.primary-nav a:focus,
+.primary-nav a:active {
   color: var(--accent);
 }
 
@@ -151,9 +154,11 @@ section {
   display: grid;
   gap: 1rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  touch-action: manipulation;
 }
 
-.hero-card:hover {
+.hero-card:hover,
+.hero-card:active {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(95, 225, 210, 0.15);
   border-color: var(--accent);
@@ -181,6 +186,12 @@ section {
   font-weight: 600;
   border: 1px solid transparent;
   transition: transform 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.btn:active {
+  transform: scale(0.95);
 }
 
 .btn.primary {
@@ -214,9 +225,11 @@ section {
   background: var(--surface-alt);
   border: 1px solid rgba(148, 163, 184, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  touch-action: manipulation;
 }
 
-.info-grid article:hover {
+.info-grid article:hover,
+.info-grid article:active {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(95, 225, 210, 0.1);
   border-color: var(--accent);
@@ -238,9 +251,11 @@ section {
   background: rgba(8, 15, 30, 0.6);
   border-radius: 0.75rem;
   transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  touch-action: manipulation;
 }
 
-.timeline article:hover {
+.timeline article:hover,
+.timeline article:active {
   transform: translateX(5px);
   background: rgba(8, 15, 30, 0.9);
   box-shadow: 0 5px 20px rgba(95, 225, 210, 0.15);
@@ -273,9 +288,11 @@ section {
   font-size: 0.95rem;
   transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
   cursor: pointer;
+  touch-action: manipulation;
 }
 
-.chip-list li:hover {
+.chip-list li:hover,
+.chip-list li:active {
   transform: scale(1.05);
   background: rgba(95, 225, 210, 0.1);
   border-color: var(--accent);
@@ -295,10 +312,13 @@ section {
   background: var(--surface);
   border: 1px solid rgba(148, 163, 184, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  touch-action: manipulation;
 }
 
 .experience-grid article:hover,
-.projects:hover {
+.experience-grid article:active,
+.projects:hover,
+.projects:active {
   transform: translateY(-5px);
   box-shadow: 0 10px 25px rgba(95, 225, 210, 0.12);
   border-color: var(--accent);
