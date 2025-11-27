@@ -97,6 +97,7 @@ section {
   display: flex;
   gap: 1.5rem;
   font-weight: 500;
+  flex-wrap: wrap;
 }
 
 .primary-nav a {
@@ -307,6 +308,8 @@ section {
 @media (max-width: 720px) {
   .primary-nav ul {
     display: flex;
+    gap: 1rem;
+    font-size: 0.9rem;
   }
 
   .nav-toggle {
@@ -324,5 +327,10 @@ section {
   .experience-grid article,
   .projects {
     padding: 1.5rem;
+  }
+
+  .primary-nav ul {
+    gap: 0.75rem;
+    font-size: 0.85rem;
   }
 }
