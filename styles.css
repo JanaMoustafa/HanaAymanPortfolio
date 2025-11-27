@@ -317,15 +317,11 @@ section {
     border-radius: 0.75rem;
     padding: 1rem;
     margin-top: 0.75rem;
-    display: none;
-  }
-
-  .primary-nav ul.open {
     display: flex;
   }
 
   .nav-toggle {
-    display: inline-flex;
+    display: none;
   }
 }
 
