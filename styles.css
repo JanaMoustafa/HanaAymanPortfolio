@@ -150,6 +150,13 @@ section {
   border: 1px solid var(--border);
   display: grid;
   gap: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(95, 225, 210, 0.15);
+  border-color: var(--accent);
 }
 
 .stat-value {
@@ -206,6 +213,13 @@ section {
   border-radius: 1rem;
   background: var(--surface-alt);
   border: 1px solid rgba(148, 163, 184, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.info-grid article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(95, 225, 210, 0.1);
+  border-color: var(--accent);
 }
 
 .section-heading h3 {
@@ -223,6 +237,13 @@ section {
   border-left: 3px solid var(--accent);
   background: rgba(8, 15, 30, 0.6);
   border-radius: 0.75rem;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline article:hover {
+  transform: translateX(5px);
+  background: rgba(8, 15, 30, 0.9);
+  box-shadow: 0 5px 20px rgba(95, 225, 210, 0.15);
 }
 
 .meta {
@@ -250,6 +271,14 @@ section {
   border: 1px solid rgba(148, 163, 184, 0.25);
   background: rgba(15, 23, 42, 0.8);
   font-size: 0.95rem;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.chip-list li:hover {
+  transform: scale(1.05);
+  background: rgba(95, 225, 210, 0.1);
+  border-color: var(--accent);
 }
 
 .experience-grid {
@@ -265,6 +294,14 @@ section {
   border-radius: 1rem;
   background: var(--surface);
   border: 1px solid rgba(148, 163, 184, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.experience-grid article:hover,
+.projects:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(95, 225, 210, 0.12);
+  border-color: var(--accent);
 }
 
 .projects ul {
